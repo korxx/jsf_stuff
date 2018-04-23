@@ -1,0 +1,26 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form id="form1">
+            <h:inputText id="doubleTemp" value="#{indexBean.temperatura}"/>
+            <br />
+            
+            <h:selectOneRadio id="boolCelsius" value="#{indexBean.celsius}">
+                <f:selectItem itemValue="true" itemLabel="Celsius"/>
+                <f:selectItem itemValue="false" itemLabel="Fahrenheit"/>
+            </h:selectOneRadio>
+            
+            <h:commandButton id="btOk" value="Ok"/>
+        </h:form>
+        
+        <h:outputText id="doubleResultado" value="#{indexBean.resultado}"/>
+        
+
+    </h:body>
+</html>
